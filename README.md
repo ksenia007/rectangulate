@@ -1,2 +1,2 @@
-# Hello World: p5.js
-This is my 'Hello World' for p5.js.
+# Rectangulate: p5.js
+This is a program to draw rectangles based on the loaded image from the assets.
