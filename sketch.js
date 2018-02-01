@@ -6,7 +6,7 @@ function setup(){
     createCanvas(500, 800);
 
     
-    img.resize(width,0); //resized the image to fit, 0 means that there will be no contraint on this parameter (no distortion)
+    img.resize(0,height); //resized the image to fit, 0 means that there will be no contraint on this parameter (no distortion)
     img.filter(BLUR,1); //blur the image to alleviate the effect of the noise
 
     // set the frame rate 
@@ -17,8 +17,8 @@ function setup(){
 
 function draw(){ 
     //get ranfom x and y locations
-    var x=floor(random(width));
-    var y=floor(random(height));
+    var x=floor(random(width-1));
+    var y=floor(random(height-1));
     //get the color of the pixel at the selected location
     var col=color(img.get(x,y));
     //create new rectanle
